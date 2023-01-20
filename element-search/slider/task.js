@@ -16,17 +16,17 @@ arrows.forEach(function (item) {
     item.onclick = function () {
         if (this.classList.contains("slider__arrow_next")) {
             let index = arrSlides.findIndex(function (item) {
-                //if (item.classList.contains("slider__item_active")) {
-                //    return item
-                //}
+                if (item.classList.contains("slider__item_active")) {
+                    return item
+                }
             });
             slideSetActive((index + 1) % arrSlides.length);
         }
         if (this.classList.contains("slider__arrow_prev")) {
             let index = arrSlides.findIndex(function (item) {
-               // if (item.classList.contains("slider__item_active")) {
-                //    return item
-                //}
+                if (item.classList.contains("slider__item_active")) {
+                    return item
+                }
             });
             if (index > 0) {
                 slideSetActive((index - 1))
