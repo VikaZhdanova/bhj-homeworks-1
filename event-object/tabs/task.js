@@ -19,7 +19,7 @@ for (let i = 0; i < arrTab.length; i++) {
                 element.className = "tab__content";
             }
             else {
-                element.className = "tab__content_active";
+                element.className = "tab__content tab__content_active";
             }
         })
     };
